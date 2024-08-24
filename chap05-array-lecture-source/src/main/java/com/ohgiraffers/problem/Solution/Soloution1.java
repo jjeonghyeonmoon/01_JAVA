@@ -46,8 +46,7 @@ public class Soloution1 {
 
     public void problem2(){
 
-
-
+        System.out.println("안녕하세요");
     }
 
 
