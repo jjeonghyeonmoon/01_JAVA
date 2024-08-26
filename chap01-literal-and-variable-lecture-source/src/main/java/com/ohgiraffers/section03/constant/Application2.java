@@ -31,6 +31,7 @@ public class Application2 {
         System.out.println(a % b);
 
         System.out.println("=======================구분선===========================");
+
         double width = 12.5;
         double height = 36.4;
         System.out.println(width * height);
