@@ -19,7 +19,23 @@ public class Application2 {
 
         /* 단어와 단어 사이의 연결은 언더스코어를 사용한다.*/
         final int MAX_AGE = 60;
-    // 실험중입니다.
-        
+
+
+
+        int a = 20;
+        int b = 30;
+        System.out.println(a + b);
+        System.out.println(a - b);
+        System.out.println(a * b);
+        System.out.println(a / b);
+        System.out.println(a % b);
+
+        System.out.println("=======================구분선===========================");
+        double width = 12.5;
+        double height = 36.4;
+        System.out.println(width * height);
+        System.out.println(2*(width + height));
+
+
     }
 }
