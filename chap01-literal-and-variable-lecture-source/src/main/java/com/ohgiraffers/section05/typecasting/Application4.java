@@ -21,8 +21,30 @@ public class Application4 {
         double height = 175.5;
         int floorHeight = (int)height;
         System.out.println("floorHeight = " + floorHeight);
-        
 
+        System.out.println("=======================구분선====================");
+
+        double language = 80.5;
+        double math = 50.6;
+        double english = 70.8;
+
+        int inum4 =(int)(language + math + english);
+        System.out.println("inum4 = " + inum4);
+        
+        int inum5 = inum4/3;
+        System.out.println("inum5 = " + inum5);
+
+
+        System.out.println("======================연습문제풀이==================");
+
+        int ev = 1000;  //엘리베이터 용량
+        int hu = 76;    //몸무게
+
+        int person = ev/hu; // 엘리베이터에 탈수있는 인원수
+        System.out.println("person = " + person);
+
+        double weight = (double) ev/person; // 평균몸무게
+        System.out.println("weight = " + weight);
 
 
     }
