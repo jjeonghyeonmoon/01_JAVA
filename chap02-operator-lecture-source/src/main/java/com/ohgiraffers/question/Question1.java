@@ -35,7 +35,9 @@ public class Question1 {
         int nextStudent = ++sausageStudent; // 다음 학생~
         System.out.println(nextStudent);
 
-
+        for (int i = 0; i < ; i++) {
+            
+        }
 
                }
 
