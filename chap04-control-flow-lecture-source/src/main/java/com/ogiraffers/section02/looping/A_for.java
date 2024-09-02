@@ -159,7 +159,7 @@ public class A_for {
             sum3 += i;
 
         }
-        System.out.println("1부터 " + a + "까지의 합은 : " + sum3); 
+        System.out.println("1부터 " + a + "까지의 합은 : " + sum3);
 
 
     }
