@@ -1,5 +1,6 @@
 package com.ogiraffers.section02.looping;
 
+import java.util.Random;
 import java.util.Scanner;
 
 public class A_for {
@@ -98,5 +99,72 @@ public class A_for {
 
 
     }
+
+    public void testForExample2(){
+        /* index. 2. 1부터 10까지의 합계를 구하시오.*/
+
+        // 초기식 : int i = 1;
+        // 조건식 : i <= 10;
+        // 증감식 : i++
+
+        // 반복문 미사용
+        int num1 = 1;
+        int num2 = 2;
+        int num3 = 3;
+        int num4 = 4;
+        int num5 = 5;
+        int num6 = 6;
+        int num7 = 7;
+        int num8 = 8;
+        int num9 = 9;
+        int num10 = 10;
+
+        // 합계를 저장하는 변수
+        int sum = 0;
+
+        sum += num1;
+        sum += num2;
+        sum += num3;
+        sum += num4;
+        sum += num5;
+        sum += num6;
+        sum += num7;
+        sum += num8;
+        sum += num9;
+        sum += num10;
+
+        System.out.println("sum = " + sum);
+
+        System.out.println("=======================================================");
+            int sum2 = 0;
+        for (int i = 1; i <= 10; i++) {
+            sum2 +=i;
+        }
+
+        System.out.println("sum2 = " + sum2);
+
+
+    }
+
+    public void testForExample3(){
+        /* index. 1.문제
+        *   5~10 사이의 난수를 발생시켜서
+        *   1부터 발생한 난수까지의 합계를 구해보자*/
+
+        int sum3 =0;
+        Random random = new Random();
+        int a = random.nextInt(5)+6;
+
+        for (int i = 1; i <= a; i++) {
+            sum3 += i;
+
+        }
+        System.out.println("1부터 " + a + "까지의 합은 : " + sum3); 
+
+
+    }
+
+
+
 
 }
