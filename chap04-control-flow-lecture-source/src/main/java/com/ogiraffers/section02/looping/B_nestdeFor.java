@@ -74,4 +74,64 @@ public class B_nestdeFor {
         }
     }
 
+    public void printTriangleStars(){
+        /*comment.
+        *  키보드로 정수를 하나 입력 받아 해당 정수 만큼 한 행에 "*" 을 행의 번호개씩 출력
+        *   ex) 정수를 입력해주세요 : 5
+        *   *
+        *   **
+        *   ***
+        *   ****
+        *   *****
+        * */
+
+        Scanner sc = new Scanner(System.in);
+        System.out.print("정수를 입력해주세요 : ");
+        int row = sc.nextInt();
+
+        for (int i = 1; i <= row; i++) {
+            for (int star = 1; star <= i; star++) {
+                System.out.print('*');
+            }
+            System.out.println();
+        }
+
+
+
+
+
+
+    }
+
+    public void printReverseTriangLeStars(){
+        /*comment.
+        *  ex)정수를 입력해주세요 : 5
+        *   *****
+        *   ****
+        *   ***
+        *   **
+        *   *
+        * */
+            Scanner sc = new Scanner(System.in);
+        System.out.print("정수를 입력해주세요 : ");
+        int num = sc.nextInt();
+
+        for (int i = num; i >= 1; i--) {
+            for (int star = 1; star <= i; star++) {
+                System.out.print('*');
+
+            }
+            System.out.println();
+
+        }
+
+
+
+
+
+    }
+
+
+
 }
+

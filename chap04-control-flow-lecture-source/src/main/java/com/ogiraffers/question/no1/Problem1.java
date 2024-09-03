@@ -177,13 +177,13 @@ public class Problem1 {
     public void ramge7(){
 
         Scanner sc = new Scanner(System.in);
-        System.out.println("성실 점수를 입력해주세요 : ");
+        System.out.print("성실 점수를 입력해주세요 : ");
         int diligence = sc.nextInt();
 
-        System.out.println("서비스 점수를 입력해주세요 : ");
+        System.out.print("서비스 점수를 입력해주세요 : ");
         int service = sc.nextInt();
 
-        System.out.println("미소 점수를 입력해주세요 : ");
+        System.out.print("미소 점수를 입력해주세요 : ");
         int smile = sc.nextInt();
 
         int avg = diligence + service + smile;
@@ -191,10 +191,28 @@ public class Problem1 {
         if (avg >= 60 && diligence >= 40 && service >= 40 && smile >= 40){
             System.out.println("합격입니다.");
         }
-        else if (avg <= 60) {
-            System.out.println("평균점수 미달로 불합격입니다.");
-        }
-        else if (diligence <= 40 || service <= 40 || smile <= 40){
+        else {
+            if(avg < 60) {
+                System.out.println("평균 점수 미달로 불합격 입니다.");
+            }
+
+            if(diligence < 40) {
+                System.out.println("성실 점수 미달로 불합격 입니다.");
+            }
+
+            if(service < 40) {
+                System.out.println("서비스 점수 미달로 불합격 입니다");
+            }
+
+            if(smile < 40) {
+                System.out.println("미소 점수 미달로 불합격 입니다");
+            }
+
+
+
+
+
+
         }
         }
 

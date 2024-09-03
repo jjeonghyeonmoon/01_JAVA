@@ -24,7 +24,7 @@ public class ProblemMain {
 //        a.ramge5();
 
         Problem1 a = new Problem1();
-        a.ramge6();
+        a.ramge7();
 
 
     }

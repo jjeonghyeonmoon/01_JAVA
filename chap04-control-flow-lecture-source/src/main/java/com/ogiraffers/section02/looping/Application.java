@@ -12,10 +12,17 @@ public class Application {
    //     a.printSimpleGugudan();
 
 
-            B_nestdeFor b = new B_nestdeFor();
+//            B_nestdeFor b = new B_nestdeFor();
  //           b.upgradeGugudanTwoToNine();
-        b.printStarInputRowTimes();
+ //       b.printStarInputRowTimes();
+//        b.printTriangleStars();
+//        b.printReverseTriangLeStars();
+ //        C_while c = new C_while();
+  //       c.testWhileStatement();
+ //       c.whileExample2();
 
+        D_dowhile d = new D_dowhile();
+        d.doWhileExample();
 
 
 
