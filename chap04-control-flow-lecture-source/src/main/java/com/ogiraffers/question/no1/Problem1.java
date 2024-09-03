@@ -195,7 +195,6 @@ public class Problem1 {
             System.out.println("평균점수 미달로 불합격입니다.");
         }
         else if (diligence <= 40 || service <= 40 || smile <= 40){
-            if ()
         }
         }
 
@@ -207,7 +206,7 @@ public class Problem1 {
 
 
 
-    }
+
 
 
 
