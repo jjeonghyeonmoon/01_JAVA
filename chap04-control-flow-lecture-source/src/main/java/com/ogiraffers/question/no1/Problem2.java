@@ -98,30 +98,30 @@ public class Problem2 {
         }
     }
 
-    public void moonje7(){
+    public void moonje7() {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("2보다 큰 정수를 입력하세요 : ");
         int num = sc.nextInt();
 
-        if (num < 2){
+        if (num < 2) {
             System.out.println("잘못 입력하셨습니다. 다시 입력하세요.");
         }
 
-        for (int i = 1; i <= num ; i++) {
+        int count = 0;
+
+        for (int i = 2; i < num; i++) {
             if (num % i == 0) {
-                System.out.println("소수다.");
+                System.out.println("소수가 아닙니다..");
                 break;
-                
-            }else if (num % i != 0){
-                System.out.println("소수가아니다.");
-            }
 
-            }
+            } else count++;
 
         }
-            
-        }
+
+        System.out.println("소수입니다.");
+    }
+}
 
 
 
