@@ -23,8 +23,21 @@ public class ProblemMain {
 //        Problem1 a = new Problem1();
 //        a.ramge5();
 
-        Problem1 a = new Problem1();
-        a.ramge7();
+//        Problem1 a = new Problem1();
+//        a.ramge7();
+
+
+        Problem2 a = new Problem2();
+ //       a.moonje();
+ //       a.moonje2();
+        //       a.moonje3();
+ //       a.moonje4();
+//        a.moonje5();
+//        a.moonje6();
+          a.moonje7();
+
+
+
 
 
     }
