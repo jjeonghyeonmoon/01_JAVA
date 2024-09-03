@@ -9,8 +9,8 @@ public class Application {
 //          a.breakGugudan();
 
           B_continue b = new B_continue();
-          b.testContinueStatement();
-
+//          b.testContinueStatement2();
+            b.test();
     }
 
 }
