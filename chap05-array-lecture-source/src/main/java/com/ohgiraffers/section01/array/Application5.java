@@ -25,15 +25,14 @@ public class Application5 {
 
         System.out.println("================================절취선======================================");
 
-        String[] meun = {"bok","jjam","tang","zza,"};
+        String[] meun = {"bok","jjam","tang","zza"};
 
+        int randomMenu = (int)(Math.random() * meun.length);
 
-
-
-
-
+        System.out.println("정현이가 뽑은 메뉴는 " + meun[randomMenu] + " 입니다.");
 
     }
+
 
 
 }
