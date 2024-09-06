@@ -8,7 +8,7 @@ public class Monster {
     int hp;
 
 
-    public void setHp(int 전달받은값을저장할공간) {
+    public void setHp(int hp) {
 
         /* comment.
         *   this 는 인스터스가 생성될 때 자신의 주소를 저장하는 레퍼런스 변수이다.
@@ -16,16 +16,16 @@ public class Monster {
         *   젼역변수에 접근하기 위해 this. 를 명시한다.*/
         if(hp > 0){
             System.out.println("정상적인 값이 들어와서 전달 값으로 몬스터의 체력을 설정합니다.");
-            hp = hp;
-
-        }
-
-
-
-        if(전달받은값을저장할공간 > 0){
-            System.out.println("정상적인 값이 들어와서 전달 값으로 몬스터의 체력을 설정합니다.");
             this.hp = hp;
 
+        }else {
+            System.out.println("0 보다 작거나 같은 값이 들어와서 몬스터의 체력을 0으로 설정합니다.");
+            this.hp = 0;
         }
+
+
+
+
+
     }
 }
