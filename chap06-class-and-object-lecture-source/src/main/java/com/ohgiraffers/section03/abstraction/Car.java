@@ -85,7 +85,7 @@ public class Car {
             System.out.println("번호를 선택해주세요 : " );
             int attack = sc.nextInt();
 
-            
+
 
 
         }
