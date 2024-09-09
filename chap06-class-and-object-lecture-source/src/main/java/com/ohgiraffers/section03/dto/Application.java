@@ -19,24 +19,37 @@ public class Application {
         *   private 캡슐화가 된 필드와, 필드의 값을 수정할 수 있는 설정자(setter), 필드에 값을 접근할 수 있는
         *   접근자(getter)로 구성이 된다. 주로 계층간의 데이터를 주고 받을 목적이다. */
 
-        MemberDTO member = new MemberDTO();
-        member. setMemberNo(1);
-        member. setName("조평훈");
-        member. setAge(20);
-        member. setGender('남');
-        member. setHeight(180.72);
-        member. setWeight(60);
-        member. setActivated(true);
+//        MemberDTO member = new MemberDTO();
+//        member. setMemberNo(1);
+//        member. setName("조평훈");
+//        member. setAge(20);
+//        member. setGender('남');
+//        member. setHeight(180.72);
+//        member. setWeight(60);
+//        member. setActivated(true);
+//
+//        System.out.println("회원번호 : " + member.getMemberNo());
+//        System.out.println("회원명 : " + member.getName());
+//        System.out.println("회원나이 : " + member.getAge());
+//        System.out.println("회원성별 : " + member.getGender());
+//        System.out.println("회원키 : " + member.getHeight());
+//        System.out.println("회원몸무게 : " + member.getWeight());
 
-        System.out.println("회원번호 : " + member.getMemberNo());
-        System.out.println("회원명 : " + member.getName());
-        System.out.println("회원나이 : " + member.getAge());
-        System.out.println("회원성별 : " + member.getGender());
-        System.out.println("회원키 : " + member.getHeight());
-        System.out.println("회원몸무게 : " + member.getWeight());
 
 
+        problem1 problem1 = new problem1();
+        problem1.setId("answjdgus");
+        problem1.setPwd(1234);
+        problem1.setName("문정현");
+        problem1.setAge(40);
+        problem1.setGender('남');
+        problem1.setMail("oops72");
 
+        System.out.println("person의 이름은 " + problem1.getId());
+        System.out.println("person의 이름은 " + problem1.getPwd());
+        System.out.println("person의 이름은 " + problem1.getName());
+        System.out.println("person의 이름은 " + problem1.getAge());
+        System.out.println("person의 이름은 " + problem1.getGender());
 
 
 
