@@ -1,5 +1,7 @@
 package com.ohgiraffers.section01.polymorphism;
 
+import java.util.Random;
+
 public class Application3 {
 
     public static void main(String[] args) {
@@ -23,5 +25,4 @@ public class Application3 {
         int random = (int)(Math.random() * 2);
         return random == 0 ? new 너구리() : new 개구리 ();
     }
-
 }
