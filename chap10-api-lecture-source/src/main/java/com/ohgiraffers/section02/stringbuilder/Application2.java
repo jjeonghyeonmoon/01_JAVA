@@ -27,8 +27,7 @@ public class Application2 {
         System.out.println("insert() : " + sb.insert(1,"avamy"));
         System.out.println("reverse() : " + sb.reverse());
 
-
-
+        
 
 
 
