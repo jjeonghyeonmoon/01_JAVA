@@ -16,7 +16,14 @@ public class Application {
         *   1. 추상클래스와 비슷하게 필요한 기능을 공통화 해서 강제성을 부여 목적
         *   2. 자바가 가진 단일상속의 단점을 극복 할 수 있다.*/
 
+        // 인터페이스도 인스턴스를 생성할 수 없다.
+//        interfaceProduct interfaceProduct = new InterfaceProduct();
 
+        // 다형성을 이용해서 자식 타입의 인스턴스로 사용할 수 있다.
+        InterfaceProduct interfaceProduct = new Product();
+
+        //동적 바인딩을 통해 오버리이딩 된 메소드로 호출이 된다.
+        interfaceProduct.nonStaticMethod();
 
 
 
