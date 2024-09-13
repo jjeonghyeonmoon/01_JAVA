@@ -1,5 +1,7 @@
 package com.ohgiraffers.section02.extend.run;
 
+import com.ohgiraffers.section02.extend.*;
+
 public class Application2 {
 
     public static void main(String[] args) {
@@ -14,6 +16,35 @@ public class Application2 {
         *   <? extends Type> : 와일드카드 상한 제한(Type 과 Type 의 후손을 이용한 인스턴스만 인자로 사용 가능)
         *   <? super Type> : 와일드카드 하한 제한(Type 과 Type 의 부모를 이용한 인스턴스만 인자로 사용 가능)
         *   */
+
+        WildCardFarm wildCardFarm = new WildCardFarm();
+        wildCardFarm.anyType( new RabbitFarm<>(new Rabbit()));
+        wildCardFarm.anyType( new RabbitFarm<>(new Bunny()));
+        wildCardFarm.anyType( new RabbitFarm<>(new DrunkenBunny()));
+
+        /* comment.
+        *   Bunny 이거나 Bunny 의 후손 토끼 농장만 매개변수로
+        *   사용이 가능하고 상위 타입인 Rabbit 은 매개변수로 사용이 불가능하다.*/
+//        wildCardFarm.extendsType(new RabbitFarm<>(new Rabbit()));
+        wildCardFarm.extendsType(new RabbitFarm<>(new Bunny()));
+        wildCardFarm.extendsType(new RabbitFarm<>(new DrunkenBunny()));
+
+
+        wildCardFarm.superType(new RabbitFarm<>(new Rabbit()));
+        wildCardFarm.superType(new RabbitFarm<>(new Bunny()));
+        wildCardFarm.superType(new RabbitFarm<>(new DrunkenBunny()));
+
+
+
+
+
+
+
+
+
+
+
+
     }
 
 
