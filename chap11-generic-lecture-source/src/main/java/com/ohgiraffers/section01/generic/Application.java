@@ -21,11 +21,15 @@ public class Application {
         GenericTest<Integer> gt1 = new GenericTest<Integer>();
         gt1.setValue(10);
         System.out.println("gt1.getValue() : " + gt1.getValue());
+        System.out.println(gt1.getValue() instanceof Integer);
 
+        GenericTest<String> gt2 = new GenericTest<String>();
+        gt2.setValue("조평훈");
+        System.out.println("gt2.getValue() : " + gt2.getValue());
+        System.out.println(gt2.getValue() instanceof String);
 
-
-
-
+        /* comment.
+        *   jdk 7 버전부터 타입 선언 시 타입변수를 작성하면 생성자 쪽에서는 타입을 생략해도 된다.*/
 
 
 
