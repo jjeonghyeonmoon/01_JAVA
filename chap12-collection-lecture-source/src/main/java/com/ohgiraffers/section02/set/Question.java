@@ -43,8 +43,8 @@ public class Question {
         //  향상된 for문을 사용해 책 목록 출력
         System.out.println("\n향상된 for문을 사용한 책 목록:");
         for (BookDTO bo : book) {
-            System.out.println(bo);ㄱㄱㄱㄱ
+            System.out.println(bo);
         }
-ㄱㄱㄱㄱ
+
     }
 }
