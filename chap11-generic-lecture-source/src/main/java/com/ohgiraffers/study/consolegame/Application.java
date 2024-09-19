@@ -15,6 +15,7 @@ public class Application {
             private Deck deck;
             private Card currentCard;
             private Scanner scanner;
+            int win;
 
             public HiLoGame() {
                 deck = new Deck();  // 덱 생성 및 섞기
@@ -33,14 +34,16 @@ public class Application {
                     String guess = scanner.nextLine();
 
                     Card nextCard = deck.dealCard();
+                    System.out.println("★★★★★★★★★★★★★★★★★★★★★★");
                     System.out.println("다음 카드: " + nextCard);
 
                     // 플레이어의 추측이 맞는지 확인
                     if ((guess.equalsIgnoreCase("high") && nextCard.getValue() > currentCard.getValue()) ||
                             (guess.equalsIgnoreCase("low") && nextCard.getValue() < currentCard.getValue())) {
-                        System.out.println("맞췄습니다!");
+                        System.out.println("맞췄습니다! 정답횟수 : " + (win += 1));
+                        System.out.println("★★★★★★★★★★★★★★★★★★★★★★");
                     } else {
-                        System.out.println("틀렸습니다! 여기까지!");
+                        System.out.println("틀렸습니다! 여기까지! 맞추신 횟수는 " + win + "회 입니다.");
                         break;
                     }
 
