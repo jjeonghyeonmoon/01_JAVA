@@ -63,10 +63,7 @@ public class Application {
 
 
 
-        }catch (DivideNotZeroException e) {
-
-            System.out.println(e.getMessage());
-        }catch (MultipleNotZeroException e){
+        }catch (DivideNotZeroException | MultipleNotZeroException e) {
 
             System.out.println(e.getMessage());
         }
