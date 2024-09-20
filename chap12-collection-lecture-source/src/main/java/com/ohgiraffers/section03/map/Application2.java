@@ -50,7 +50,7 @@ public class Application2 {
             // list() -> Properties 의 모든 키와 값 목록을 내보기 한다.
             prop2.list(System.out);
 
-            
+
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
