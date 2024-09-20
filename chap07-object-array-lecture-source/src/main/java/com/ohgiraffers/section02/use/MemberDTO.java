@@ -2,7 +2,8 @@ package com.ohgiraffers.section02.use;
 
 import java.util.PrimitiveIterator;
 
-public class MemberDTO {
+public class +
++MemberDTO {
 
     private int no;         // 회원 번호
     private String id;      //회원 id
