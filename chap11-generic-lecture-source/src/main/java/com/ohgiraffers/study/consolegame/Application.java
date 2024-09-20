@@ -24,6 +24,7 @@ public class Application {
 
             public void playGame() {
                 System.out.println("Hi-Lo 게임에 오신 것을 환영합니다~~~!");
+                System.out.println("최소 : 21 최대 : 144");
 
                 //첫 번째 카드를 뽑음
                 currentCard = Deck.dealCard();
