@@ -1,5 +1,6 @@
 package com.ohgiraffers.section04.Problem;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Application {
