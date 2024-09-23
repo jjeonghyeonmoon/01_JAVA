@@ -7,42 +7,47 @@ public class BookDTO {
         private String title;
         private String author;
 
-        public BookDTO() {
-        }
 
-        public int getbNo() {
-            return bNo;
-        }
+    public BookDTO(int category, String title, String author) {
 
-        public void setbNo(int bNo) {
-            this.bNo = bNo;
-        }
+        this.category = category;
+        this.title = title;
+        this.author = author;
+    }
 
-        public int getCategory() {
-            return category;
-        }
+    public int getbNo() {
+        return bNo;
+    }
 
-        public void setCategory(int category) {
-            this.category = category;
-        }
+    public void setbNo(int bNo) {
+        this.bNo = bNo;
+    }
 
-        public String getTitle() {
-            return title;
-        }
+    public int getCategory() {
+        return category;
+    }
 
-        public void setTitle(String title) {
-            this.title = title;
-        }
+    public void setCategory(int category) {
+        this.category = category;
+    }
 
-        public String getAuthor() {
-            return author;
-        }
+    public String getTitle() {
+        return title;
+    }
 
-        public void setAuthor(String author) {
-            this.author = author;
-        }
+    public void setTitle(String title) {
+        this.title = title;
+    }
 
-        @Override
+    public String getAuthor() {
+        return author;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    @Override
         public String toString() {
             return "BookDTO{" +
                     "bNo=" + bNo +

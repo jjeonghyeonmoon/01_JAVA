@@ -18,7 +18,7 @@ public class BookMenu {
             System.out.println("3.도서 검색");
             System.out.println("4.전체 출력");
             System.out.println("5.끝내기");
-            System.out.print("메뉴 번호 선택");
+            System.out.print("메뉴 번호 선택 : ");
             int choice = sc.nextInt();
 
             switch (choice){
@@ -32,6 +32,15 @@ public class BookMenu {
                 case 3 :
                     bm.searchBook(inputBookTitle());
                     break;
+                case 4:
+                    bm.displayAll();
+                    break;
+                case 5:
+                    System.out.println("프로그램을 종료합니다.");
+                    return;
+                default:
+                    System.out.println("잘못된 입력입니다. 다시 선택하세요.");
+
             }
 
         }
@@ -41,15 +50,17 @@ public class BookMenu {
     public BookDTO inputBook() {
         Scanner sc = new Scanner(System.in);
         System.out.print("도서 제목을 입력하세요 : ");
-        int category = sc.nextInt();
+        String title = sc.nextLine();
 
         System.out.print("도서 장르를 입력하세요 (1:인문 / 2:자연과학 / 3:의료 / 4:기타): ");
-        String title = sc.nextLine();
+        int category = sc.nextInt();
+        sc.nextLine();
 
         System.out.print("도서 저자를 입력하세요 : ");
         String author = sc.nextLine();
 
-        return null;
+
+        return new BookDTO(category,title,author);
     }
 
     public int inputBookNo() {
@@ -63,14 +74,11 @@ public class BookMenu {
 
     public String inputBookTitle() {
         Scanner sc = new Scanner(System.in);
-        System.out.println("찾으실 도서 제목을 입력하세요 : ");
-        int category = sc.nextInt();
+        System.out.print("찾으실 도서 제목을 입력하세요 : ");
+        String title = sc.nextLine();
 
 
-        return "";
+        return title;
     }
-
-
-
 
 }
