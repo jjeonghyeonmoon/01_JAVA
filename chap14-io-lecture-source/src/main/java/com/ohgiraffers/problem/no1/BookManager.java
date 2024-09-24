@@ -44,17 +44,13 @@ public class BookManager {
     }
 
     public void displayAll() {
-        if (bookList.isEmpty()){
+        if (bookList.isEmpty()) {
             System.out.println("조회 결과가 없습니다..");
-        }else {
-            for (BookDTO book : bookList){
+        } else {
+            for (BookDTO book : bookList) {
                 System.out.println("전체목록은 " + book + "입니다.");
             }
         }
     }
 
-
-
-    public void printBookList(List<BookDTO> printList) {
-    }
 }
